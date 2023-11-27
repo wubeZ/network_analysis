@@ -5,34 +5,19 @@
 
 This Python package, `network_analysis`, is designed for conducting network analysis task. It provides tools and utilities to analyze network data, with a focus on handling Slack messages from a previous 10 Academy training program.
 
-## What to do
-
-Several code snippets have been provided to serve as a starting point for your project. However, it's essential to note that the code has not undergone thorough testing, and errors are expected. Your task is to identify and rectify errors, remove unnecessary components, and incorporate any missing elements.
-
-Consider this initial code as a foundation for your solution, but do not rely on it in its current state. It's provided to give you a starting point, but you should be prepared to modify and enhance it to meet the specific requirements of your system.
-
-As you commence your work, focus on exploring the dataset to gain a deep understanding of its structure and contents. Attempt to answer various intriguing questions that arise during your exploration.
-
-For guidance on the specific questions to address, refer to the notebooks/parse_slack_data.ipynb notebook, where you'll find empty cells designed for your responses. Utilize these cells to document your findings, insights, and any challenges encountered.
-
-Remember, this is an iterative process, and refining your code and analyses is a crucial part of the learning experience. Regularly post question on slack, and don't hesitate to reach out to tutors if you encounter difficulties. Best of luck with your exploration and analysis!
-
 ## Table of Contents
 
-- [Installation](#installation)
+- [Getting Started](#getting-started)
   - [Creating a Virtual Environment](#virtual-env)
   - [Clone this package](#clone)
 - [Usage](#usage)
   - [Configuration](#configuration)
   - [Data Loading](#data-loading)
   - [Utilities](#utilities)
-- [Testing](#testing)
-- [Documentation](#documentation)
-- [Notebooks](#notebooks)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation
+## Getting Started
 
 ### Creating a Virtual Environment
 
@@ -57,38 +42,6 @@ If you prefer Conda as your package manager:
     conda activate your_env_name
     ```
 
-#### Using Virtualenv
-
-If you prefer using `venv`, Python's built-in virtual environment module:
-
-1. Open your terminal or command prompt.
-
-2. Navigate to your project directory.
-
-3. Run the following command to create a new virtual environment:
-
-    ```bash
-    python -m venv your_env_name
-    ```
-
-    Replace `your_env_name` with the desired name for your environment.
-
-4. Activate the environment:
-
-    - On Windows:
-
-    ```bash
-    .\your_env_name\scripts\activate
-    ```
-
-    - On macOS/Linux:
-
-    ```bash
-    source your_env_name/bin/activate
-    ```
-
-Now, your virtual environment is created and activated. You can install packages and run your Python scripts within this isolated environment. Don't forget to install required packages using `pip` or `conda` once the environment is activated.
-
 ### Clone this package
 
 To install the `network_analysis` package, follow these steps:
@@ -106,8 +59,6 @@ To install the `network_analysis` package, follow these steps:
     ```bash
     pip install -r requirements.txt
     ```
-
-Please be aware that the existing requirements.txt file includes only a limited set of packages at the moment, and it might not encompass all the necessary packages for your analysis. Make sure to supplement it with any additional packages you plan to install.
 
 ## Usage
 ### Configuration
@@ -143,34 +94,11 @@ cleaned_data = clean_data(slack_data)
 visualize_network(cleaned_data)
 ```
 
-## Testing
-Run tests using the following command:
-
-```bash
-make test
-```
-
-This will execute the unit tests located in the tests directory.
-
-## Documentation
-Visit the docs directory for additional documentation and resources. The documentation covers important aspects such as code structure, best practices, and additional usage examples.
-
-## Notebooks
-The notebooks directory contains Jupyter notebooks that demonstrate specific use cases and analyses. Refer to these notebooks for hands-on examples.
-
 ## Contributing
 Contributions are welcome! Before contributing, please review our contribution guidelines.
 
 ##  License
 This project is licensed under the MIT License.
-
-## Network Analysis
-
-This is a starter python package to analze the slack data to learn about
-
-* Patter of users messaging behaviour
-* Patter of replies and reactions of users to messages posted both by peers and admins
-* Discover sub-communities by building network graphs of message senders and those who reply or react to those messages
 
 
 
